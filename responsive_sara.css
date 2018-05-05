@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+    order: 10;
+}
+@media screen and (max-width: 767px) {
+    .header__logo {
+        height: 48px;
+        margin-right: 0.5em;
+    }
+    .header__title {
+        margin-left: 0;
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+   /* .news_text { width: 50%; } */
+    .hero { width: 50%; float: right; margin: 2%; }
+    .top-news { width: 50%; }
+    .scores { width: 50%; }
+    .weather { width: 50%; }
+}
+
+@media screen and (min-width: 1200px) {
+    .recent-news { column-count: 2; }
+
+
+}
+/* @media screen and (min-width: 1800px) {
+    .recent-news { column-count: 3; }
+ } */
